@@ -10,7 +10,7 @@ function App() {
       {/* <Home /> */}
       {/* <SingIn />  */}
       {/* <SingUp /> */}
-      {/* <Profile_own /> */}
+      <Profile_own />
     </>
   );
 }
