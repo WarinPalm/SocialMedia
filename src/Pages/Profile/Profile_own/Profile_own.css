@@ -1,0 +1,125 @@
+@import "../../colour.css";
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.profile_own-container{
+  background-color: var(--primary);
+}
+
+.profile_own-container .left {
+  width: calc((100% - 748px) / 2);
+  color: var(--septenary);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  .left-fixed {
+    width: calc((100% - 748px) / 2);
+    position: fixed;
+    .logo {
+      margin-left: 28px;
+      margin-top: 32px;
+      h1 {
+        font-family: JasmineUPC;
+        font-size: 48px;
+        font-weight: 900;
+        font-style: italic;
+      }
+    }
+    .home-sidebar-container {
+      margin-top: 18px;
+      width: 100%;
+      padding: 0 30px 0 30px;
+      .current-user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        .img-and-name {
+          display: flex;
+          justify-content: space-between;
+          width: 170px;
+          height: 46px;
+          cursor: pointer;
+          .img-user img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .about-user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .about-top {
+              color: #757575;
+              font-weight: 600;
+              &:hover {
+                color: #c2c2c2;
+                transition: all 0.2s ease;
+              }
+            }
+            .about-bottom {
+              color: #b3b3b3;
+            }
+          }
+        }
+        .logout {
+          font-family: "Actor", sans-serif;
+          color: #aeaeae;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19.25px;
+          cursor: pointer;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+      .menu-container {
+        margin-top: 30px;
+        .menu-home-container {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          padding-left: 15px;
+          cursor: pointer;
+          .home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 110px;
+            .home-text {
+              color: #aeaeae;
+              font-weight: 600;
+            }
+          }
+          &:hover {
+            background-color: #685ce724;
+            border-radius: 7px;
+          }
+        }
+        .menu-post-container {
+          margin-top: 20px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          padding-left: 15px;
+          cursor: pointer;
+          .post {
+            margin-left: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 110px;
+            .post-text {
+              margin-right: 3px;
+              color: #aeaeae;
+              font-weight: 600;
+            }
+          }
+          &:hover {
+            background-color: #685ce724;
+            border-radius: 7px;
+          }
+        }
+      }
+    }
+  }
+}
