@@ -55,16 +55,7 @@ const Profile_left = () => {
               
               </div>
             </Link>
-            <div className="menu-post-container">
-              <div className="post">
-                <FontAwesomeIcon
-                  icon={faSquarePlus}
-                  size="2xl"
-                  style={{ color: "#675ce7" }}
-                />
-                <div className="post-text">POST</div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

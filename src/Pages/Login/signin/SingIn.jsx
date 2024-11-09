@@ -15,7 +15,7 @@ const SingIn = () => {
           <input name="email" type="email" required/>
           <label>Password</label>
           <input name="password" type="password" required/>
-          <button className="submit" type="submit">CONTINUE</button>
+          <button className="submit w-100" type="submit"><Link className="text-decoration-none"to="../">CONTINUE</Link></button>
           <p>Don’t have an account yet?</p>
           <Link to={'../signup'}>Sign-Up</Link>
         </div>
