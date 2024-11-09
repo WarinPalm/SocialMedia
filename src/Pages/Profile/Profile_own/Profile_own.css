@@ -179,8 +179,7 @@
   width: 748px ;
   height: auto;
   color: white;
-  border-left: 1px solid var(--quinary);
-  border-right: 1px solid var(--quinary);
+
 }
 
 .left-pro,
@@ -205,7 +204,7 @@
   height: 250px;
   background-color: var(--primary);
   position: relative;
-  border-bottom: 1px solid var(--quinary);
+  border: 1px solid var(--quinary);
   .profilefordetail{
     margin-left: 200px;
     display: flex;

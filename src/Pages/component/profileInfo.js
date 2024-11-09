@@ -1,23 +1,23 @@
 export const profileInfo = {
     rif:
-        {name:"rif", picture:'/public/profile/rif.jpg', add:'@12if._', statusFow:"False"},
+        {name:"USER1", picture:'/public/ICP/2.png', add:'@ICP_Acc01', statusFow:"False"},
 
     may:
-        {name:"may", picture:'/public/profile/may.jpg', add:'@aiimay.__', statusFow:"False"},
+        {name:"USER2", picture:'/public/ICP/3.png', add:'@ICP_Acc02', statusFow:"False"},
 
     cream:
-        {name:"cream", picture:'/public/profile/cream.jpg', add:'@creamcha', statusFow:"False"},
+        {name:"USER3", picture:'/public/ICP/4.png', add:'@ICP_Acc03', statusFow:"False"},
 
     duanpen:
-        {name:"duanpen", picture:'/public/profile/tam.jpg', add:'@duanpen.nn', statusFow:"False"},
+        {name:"USER4", picture:'/public/ICP/5.png', add:'@ICP_Acc04', statusFow:"False"},
     fai :
-        {name:"fai", picture:'/public/profile/fai.jpg', add:'@impytdx_', statusFow:"False"},
+        {name:"USER5", picture:'/public/ICP/6.png', add:'@ICP_Acc05', statusFow:"False"},
 
     naruemon:
-        {name:"naruemon", picture:'/public/profile/kea.jpg', add:'@sslm.g', statusFow:"False"},
+        {name:"USER6", picture:'/public/ICP/7.png', add:'@ICP_Acc06', statusFow:"False"},
 
     bhumipat:
-        {name:"bhumipat w.", picture:'/public/profile/tew.jpg', add:'@bmpxkt', statusFow:"False"}
+        {name:"USER7", picture:'/public/ICP/8.png', add:'@ICP_Acc07', statusFow:"False"}
     
 }
 

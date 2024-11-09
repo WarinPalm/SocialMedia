@@ -16,7 +16,7 @@ const HomeMid = () => {
     const newPost = { text, image, video, id: crypto.randomUUID() };
 
     // Append the new post to the existing posts array
-    setPosts((prevPosts) => [...prevPosts, newPost]);
+    setPosts((prevPosts) => [newPost, ...prevPosts]);
     
     // Reset the form fields
     setText("");
@@ -54,11 +54,11 @@ const HomeMid = () => {
         <h1>HOME</h1>
       </div>
 
-      <div className="row align-items-center">
+      <div className="row">
         <div className="col-1 me-3 mb-3">
           <img
-            className="user-img rounded-circle ms-2"
-            src="https://s3-alpha-sig.figma.com/img/11db/cb98/2f9ba115c7d5cc790cc48a457815fb67?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aHWM539yjmOZ8m77GujEFxQ~xkua5ICdaWKtbkwfkfoOmZMuAcRdObcC69NoOdlU5vp2JonV2L7xUY53Ir4S7kSNtO49cd1gKYjPoNeBiW4YBlTZr2iP6tv4LMOSMEeERCqG4UCOghJ2JXooqN0ca-G1Dt2gEu9w83I~43IIYsR5ZE94iZ00zDdN9IhjCQ2c47U-Sj-6~5RGYgbizDf8usk2H-GascnRsb6QT4yy1O1Lk7jMxFt7vpiFdJpXEE2M5l3CSjJJ2SkLF94~A2qjSPoJON2fNplvycj0IaFpE7ftL6o4t23ipgYlDTsp9DuZ9~LfOZ0a8Pqk1dpdtXh0Mw__"
+            className="user-img rounded-circle ms-2 img-post-profile"
+            src="/public/ICP/ICPlogo.png"
             alt="User"
             style={{ width: '50px', height: '50px', objectFit: 'cover' }}
           />
@@ -120,7 +120,7 @@ const HomeMid = () => {
               />
             </div>
             <div>
-              <button className="btn btn-primary mt-3" onClick={post}>
+              <button className="btn btn-primary mt-3" style={{backgroundColor:"#675ce7", borderRadius:"10px",borderColor:"black"}}onClick={post}>
                 Post!
               </button>
             </div>
@@ -131,6 +131,7 @@ const HomeMid = () => {
       {posts.map((post) => (
         <Content key={post.id} post={post} deletePost={deletePost} />
       ))}
+
     </div>
   );
 };
