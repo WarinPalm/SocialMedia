@@ -8,6 +8,7 @@ import Home from "./Pages/home/Home";
 import SingIn from "./Pages/Login/signin/SingIn";
 import SingUp from "./Pages/Login/singup/SingUp";
 import Profile_own from "./Pages/Profile/Profile_own/Profile_own";
+import Test from "./Pages/component/test";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path:"/myprofile",
     element:<Profile_own/>
+  }
+  ,
+  {
+    path:"/test",
+    element:<Test/>
   }
 ]);
 

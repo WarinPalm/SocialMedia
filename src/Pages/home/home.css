@@ -283,7 +283,10 @@
     }
   }
 }
-
+h1{
+  font-family: "Poppins", sans-serif !important;
+  font-weight: none !important;
+}
 .home-content .right {
   width: calc((100% - 748px) / 2);
   color: #6e64dc;

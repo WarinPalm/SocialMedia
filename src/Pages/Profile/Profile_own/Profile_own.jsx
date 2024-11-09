@@ -1,22 +1,32 @@
-import Profile_left from "./componemt/Profile_left";
-import Profile_mid from "./componemt/Profile_mid";
-import Profile_right from "./componemt/Profile_right";
+import Profile_left from "./component/Profile_left";
+import Profile_mid from "./component/Profile_mid";
+import Profile_right from "./component/Profile_right";
 import "./Profile_own.css";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
+import HomeRight from "../../home/component/HomeRight";
 
 const Profile_own = () => {
   const location = useLocation();
-  const { state } = location;
-  
+  const { pic, name, add, follow, setfollow } = location.state || {};
+
+  const [followStatus, setFollowStatus] = useState(follow);
+
   return (
-    <div className="profile_own-container">
-      <div className="left-pro">
+    <div className="profile_own-container home-content">
+      {/* <div className="left-pro"> */}
         <Profile_left />
-      </div>
-      <Profile_mid profile={state.pic} name={state.name} add={state.add} follow = {state.follow} setfollow={state.setfollow} />
-      <div className="right-pro">
+      {/* </div> */}
+      <Profile_mid 
+        picture={pic} 
+        name={name} 
+        add={add} 
+        follow={followStatus} 
+        setFollow={setFollowStatus} 
+      />
+      {/* <div className="right-pro"> */}
         <Profile_right />
-      </div>
+      {/* </div> */}
     </div>
   );
 };

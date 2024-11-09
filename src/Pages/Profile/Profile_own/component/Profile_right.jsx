@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Recommended from "./Recommended";
-import { profileInfo } from "../../component/profileInfo";
+import Recommended from "../../../home/component/Recommended";
+import { profileInfo } from "../../../component/profileInfo";
 
-const HomeRight = () => {
+const Profile_right = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -10,6 +10,8 @@ const HomeRight = () => {
   }, []);
 
   return (
+    
+
     <div className="right">
       <h1>Recommended</h1>
       {data.map((person, index) => (
@@ -25,4 +27,4 @@ const HomeRight = () => {
   );
 };
 
-export default HomeRight;
+export default Profile_right;

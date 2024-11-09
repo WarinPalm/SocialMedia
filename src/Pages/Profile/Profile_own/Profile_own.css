@@ -3,7 +3,7 @@
 
 .profile_own-container {
   background-color: var(--primary);
-  display: flex;
+  /* display: flex; */
 }
 
 .profile_own-container .left {
