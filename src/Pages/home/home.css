@@ -288,6 +288,7 @@
   width: calc((100% - 748px) / 2);
   color: #6e64dc;
   padding: 55px 20px 0 30px;
+
   h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -301,6 +302,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    justify-content: space-around;
     .Recommended-img img {
       width: 40px;
       height: 40px;
@@ -327,22 +329,11 @@
         color: #b3b3b3;
       }
     }
-    .follow-btn {
-      margin-left: 70px;
-      background-color: transparent;
-      color: var(--senary);
-      border: 2px solid var(--senary);
-      width: 190px;
-      height: 35px;
-      border-radius: 10px;
-      font-weight: 600;
-      cursor: pointer;
-      font-size: 15px;
-      &:hover {
-        transition: all .7s ease;
-        background-color: #6e64dc;
-        color: var(--septenary);
-      }
-    }
   }
+}
+.recomcon{
+  text-decoration: none;
+  display: flex;
+  
+  width: 50%;
 }

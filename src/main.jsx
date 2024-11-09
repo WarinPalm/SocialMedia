@@ -2,9 +2,7 @@ import * as React from "react";
 import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
+  RouterProvider
 } from "react-router-dom";
 import Home from "./Pages/home/Home";
 import SingIn from "./Pages/Login/signin/SingIn";
@@ -16,15 +14,15 @@ const router = createBrowserRouter([
     element: <Home/>
   },
   {
-    path: "/signIn",
+    path: "/signin",
     element: <SingIn/>
   },
   {
-    path: "/signIn",
+    path: "/signup",
     element: <SingUp/>
   },
   {
-    path:"/myProfile",
+    path:"/myprofile",
     element:<Profile_own/>
   }
 ]);

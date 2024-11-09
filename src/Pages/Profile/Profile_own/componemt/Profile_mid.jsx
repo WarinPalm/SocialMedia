@@ -1,16 +1,21 @@
-const Profile_mid = () => {
+import Follow from "../../../component/Follow"
+import UnFollow from "../../../component/UnFollow"
+import { useState } from "react"
+
+const Profile_mid = ({pic , name , add , follow }) => {
+  const [followw , setFolloww] = useState(follow)
   return (
     <div className="profile-mid">
       <div className="profile">
-        <img src="https://s3-alpha-sig.figma.com/img/11db/cb98/2f9ba115c7d5cc790cc48a457815fb67?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aHWM539yjmOZ8m77GujEFxQ~xkua5ICdaWKtbkwfkfoOmZMuAcRdObcC69NoOdlU5vp2JonV2L7xUY53Ir4S7kSNtO49cd1gKYjPoNeBiW4YBlTZr2iP6tv4LMOSMEeERCqG4UCOghJ2JXooqN0ca-G1Dt2gEu9w83I~43IIYsR5ZE94iZ00zDdN9IhjCQ2c47U-Sj-6~5RGYgbizDf8usk2H-GascnRsb6QT4yy1O1Lk7jMxFt7vpiFdJpXEE2M5l3CSjJJ2SkLF94~A2qjSPoJON2fNplvycj0IaFpE7ftL6o4t23ipgYlDTsp9DuZ9~LfOZ0a8Pqk1dpdtXh0Mw__" className="profile-pic"></img>
+        <img src={pic} className="profile-pic"></img>
         <div className="bg-profile"></div>
         <div className="profilefordetail">
           <div className="leftleft">
-            <div className="name">Anly Sambath</div>
-            <div className="addname">@anly</div>
+            <div className="name">{name}</div>
+            <div className="addname">@{add}</div>
           </div>
-          <div className="rightright">
-            <button className="follow-btn">Edit Profile</button>
+          <div className="rightright" onClick={()=>setFolloww(!followw)}>
+            {followw ? <Follow /> : <UnFollow />}
           </div>
         </div>
       </div>

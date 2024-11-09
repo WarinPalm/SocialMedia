@@ -1,5 +1,6 @@
 import "./signin.css";
 import bg from "/public/social media platform_fix.png";
+import { Link } from "react-router-dom";
 
 const SingIn = () => {
   return (
@@ -16,7 +17,7 @@ const SingIn = () => {
           <input name="password" type="password" required/>
           <button className="submit" type="submit">CONTINUE</button>
           <p>Don’t have an account yet?</p>
-          <a href="">Sing-Up</a>
+          <Link to={'../signup'}>Sign-in</Link>
         </div>
       </form>
     </div>
