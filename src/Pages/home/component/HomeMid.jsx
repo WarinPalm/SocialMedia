@@ -59,7 +59,8 @@ const HomeMid = () => {
         </div>
         <div className="col-10">
           <textarea
-            className="form-control p-3"
+            className="form-control text-area-post p-3"
+            style={{backgroundColor :"transparent",color:"white",}}
             placeholder="Text something..."
             value={text}
             onChange={(e) => setText(e.target.value)}
