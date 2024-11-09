@@ -10,7 +10,7 @@ const Recommended = ({ currentName, currentPicture, currentAdd, currentStatus })
     <div className="Recommended">
       <Link 
         className="recomcon" 
-        to="../myprofile"
+        to="../ourprofile"
         state={{
           pic: currentPicture,
           name: currentName,
@@ -23,7 +23,7 @@ const Recommended = ({ currentName, currentPicture, currentAdd, currentStatus })
         </div>
         <div className="add-name">
           <div className="name">{currentName}</div>
-          <div className="username">@{currentAdd}</div>
+          <div className="username">{currentAdd}</div>
         </div>
       </Link>
       <a className="follow-container" onClick={() => setFollow(!follow)}>

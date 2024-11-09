@@ -11,7 +11,7 @@ const Profile_mid = ({ picture, name, add, follow, setFollow }) => {
         <div className="profilefordetail">
           <div className="leftleft">
             <div className="name">{name}</div>
-            <div className="addname">@{add}</div>
+            <div className="addname">{add}</div>
           </div>
           <div className="rightright" onClick={() => setFollow(!follow)}>
             {follow ? <Follow /> : <UnFollow />}

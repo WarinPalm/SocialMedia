@@ -14,9 +14,7 @@ const Profile_own = () => {
 
   return (
     <div className="profile_own-container home-content">
-      {/* <div className="left-pro"> */}
-        <Profile_left />
-      {/* </div> */}
+      <Profile_left />
       <Profile_mid 
         picture={pic} 
         name={name} 
@@ -24,9 +22,7 @@ const Profile_own = () => {
         follow={followStatus} 
         setFollow={setFollowStatus} 
       />
-      {/* <div className="right-pro"> */}
-        <Profile_right />
-      {/* </div> */}
+      <Profile_right />
     </div>
   );
 };

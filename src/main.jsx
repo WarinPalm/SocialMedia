@@ -8,7 +8,8 @@ import Home from "./Pages/home/Home";
 import SingIn from "./Pages/Login/signin/SingIn";
 import SingUp from "./Pages/Login/singup/SingUp";
 import Profile_own from "./Pages/Profile/Profile_own/Profile_own";
-import Test from "./Pages/component/test";
+import MyProfile from "./Pages/Profile/Profile_own/MyProfile";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,14 +24,14 @@ const router = createBrowserRouter([
     element: <SingUp/>
   },
   {
-    path:"/myprofile",
+    path:"/ourprofile",
     element:<Profile_own/>
-  }
-  ,
+  },
   {
-    path:"/test",
-    element:<Test/>
+    path:"/myprofile",
+    element:<MyProfile/>
   }
+  
 ]);
 
 createRoot(document.getElementById("root")).render(
