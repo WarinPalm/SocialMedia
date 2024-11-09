@@ -1,5 +1,5 @@
 import "../signin/signin.css";
-import bg from "../../../../public/social media platform_fix.png";
+import bg from "/social media platform_fix.png";
 
 const SingUp = () => {
   return (

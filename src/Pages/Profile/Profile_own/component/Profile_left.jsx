@@ -5,7 +5,7 @@ import { faAddressBook } from "@fortawesome/free-regular-svg-icons/faAddressBook
 import { Link } from "react-router-dom";
 
 const Profile_left = () => {
-  const pic = "/public/ICP/1.png";
+  const pic = "/ICP/1.png";
   const name = "Mr.ICP Internet";
   const add = "@ICP_USER";
 
@@ -39,7 +39,7 @@ const Profile_left = () => {
             </Link>
           </div>
           <div className="menu-container">
-            <Link to="/" style={{textDecoration:"None"}}>
+            <Link to="../home" style={{textDecoration:"None"}}>
               <div className="menu-home-container"> 
               
                 <div className="home">

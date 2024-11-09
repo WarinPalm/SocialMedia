@@ -58,7 +58,7 @@ const HomeMid = () => {
         <div className="col-1 me-3 mb-3">
           <img
             className="user-img rounded-circle ms-2 img-post-profile"
-            src="/public/ICP/ICPlogo.png"
+            src="/ICP/1.png"
             alt="User"
             style={{ width: '50px', height: '50px', objectFit: 'cover' }}
           />
@@ -67,7 +67,7 @@ const HomeMid = () => {
           <textarea
             className="form-control text-area-post p-3"
             style={{backgroundColor :"transparent",color:"white"}}
-            placeholder="Text something..."
+            placeholder="Post something..."
             value={text}
             onChange={(e) => setText(e.target.value)}
             rows="3"

@@ -58,13 +58,28 @@
     }
     .submit{
       background-color: var(--senary);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
       color: var(--septenary);
+    }.submit:hover{
+      transform: scale(1.05); 
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+    }
+    .submit-plug{
+      background-image: linear-gradient(135deg, #19ff00, #29f4ff 30%, #ff74e8 68%, #fbff00);
+      color: black;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .submit-plug:hover{
+      transform: scale(1.05); 
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+    }
+    .submit , .submit-plug{
+
       border: none;
       border-radius: 10px;
       padding: 10px;
       width: 110px;
       font-weight: 500;
-      margin: 30px auto;
       cursor: pointer;
       &:hover{
         background-color: #665bde;
