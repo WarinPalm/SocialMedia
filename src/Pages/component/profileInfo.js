@@ -1,6 +1,6 @@
 export const profileInfo = {
     rif:
-        {name:"USER1", picture:'../../assets/ICP', add:'@ICP_Acc01', statusFow:"False"},
+        {name:"USER1", picture:'/public/ICP/2.png', add:'@ICP_Acc01', statusFow:"False"},
 
     may:
         {name:"USER2", picture:'/public/ICP/3.png', add:'@ICP_Acc02', statusFow:"False"},
