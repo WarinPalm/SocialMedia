@@ -10,12 +10,15 @@ const HomeMid = () => {
   const [video, setVideo] = useState(null); 
 
   const post = () => {
-    if (!text && !image && !video) return; 
+    if (!text && !image && !video) return;
 
-    setPosts([
-      ...posts,
-      { text, image, video, id: crypto.randomUUID() }
-    ]);
+    // Create a new post object
+    const newPost = { text, image, video, id: crypto.randomUUID() };
+
+    // Append the new post to the existing posts array
+    setPosts((prevPosts) => [...prevPosts, newPost]);
+    
+    // Reset the form fields
     setText("");
     setImage(null); 
     setVideo(null);
@@ -39,15 +42,18 @@ const HomeMid = () => {
       setVideo(videoURL);
     }
   };
-  
-  const deletePost = (id)=>{
-    setPosts((posts.filter(item => item.id !== id)))
-  }
+
+  const deletePost = (id) => {
+    // Remove post by id
+    setPosts(posts.filter(item => item.id !== id));
+  };
+
   return (
     <div className="mid container py-4">
       <div className="home-text text-center mb-4">
         <h1>HOME</h1>
       </div>
+
       <div className="row align-items-center">
         <div className="col-1 me-3 mb-3">
           <img
@@ -60,7 +66,7 @@ const HomeMid = () => {
         <div className="col-10">
           <textarea
             className="form-control text-area-post p-3"
-            style={{backgroundColor :"transparent",color:"white",}}
+            style={{backgroundColor :"transparent",color:"white"}}
             placeholder="Text something..."
             value={text}
             onChange={(e) => setText(e.target.value)}
@@ -121,10 +127,10 @@ const HomeMid = () => {
           </div>
         </div>
       </div>
+
       {posts.map((post) => (
-          <Content key={post.id} post={post} deletePost={deletePost} />
+        <Content key={post.id} post={post} deletePost={deletePost} />
       ))}
-      
     </div>
   );
 };

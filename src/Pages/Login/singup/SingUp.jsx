@@ -18,8 +18,8 @@ const SingUp = () => {
           <input name="password" type="password" required />
           <label>Re-Enter password</label>
           <input name="re-password" type="password" required />
-          <button className="submit" type="submit">
-            CONTINUE
+          <button className="submit w-100" type="submit">
+            REGISTER
           </button>
         </div>
       </form>
