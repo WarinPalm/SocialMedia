@@ -1,0 +1,259 @@
+@import "../../colour.css";
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.profile_own-container {
+  background-color: var(--primary);
+  /* display: flex; */
+}
+
+.profile_own-container .left {
+  width: calc((100% - 748px) / 2);
+  color: var(--septenary);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  .left-fixed {
+    width: calc((100% - 748px) / 2);
+    position: fixed;
+    .logo {
+      margin-left: 28px;
+      margin-top: 32px;
+      h1 {
+        font-family: JasmineUPC;
+        font-size: 48px;
+        font-weight: 900;
+        font-style: italic;
+      }
+    }
+    .home-sidebar-container {
+      margin-top: 18px;
+      width: 100%;
+      padding: 0 30px 0 30px;
+      .current-user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        .img-and-name {
+          display: flex;
+          justify-content: space-between;
+          width: 170px;
+          height: 46px;
+          cursor: pointer;
+          .img-user img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .about-user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .about-top {
+              color: #757575;
+              font-weight: 600;
+              &:hover {
+                color: #c2c2c2;
+                transition: all 0.2s ease;
+              }
+            }
+            .about-bottom {
+              color: #b3b3b3;
+            }
+          }
+        }
+        .logout {
+          font-family: "Actor", sans-serif;
+          color: #aeaeae;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19.25px;
+          cursor: pointer;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+      .menu-container {
+        margin-top: 30px;
+        .menu-home-container {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          padding-left: 15px;
+          cursor: pointer;
+          .home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 110px;
+            .home-text {
+              color: #aeaeae;
+              font-weight: 600;
+            }
+          }
+          &:hover {
+            background-color: #685ce724;
+            border-radius: 7px;
+          }
+        }
+        .menu-post-container {
+          margin-top: 20px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          padding-left: 15px;
+          cursor: pointer;
+          .post {
+            margin-left: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 110px;
+            .post-text {
+              margin-right: 3px;
+              color: #aeaeae;
+              font-weight: 600;
+            }
+          }
+          &:hover {
+            background-color: #685ce724;
+            border-radius: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Recommended {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  .Recommended-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  .add-name {
+    font-family: "Poppins", sans-serif;
+    margin-left: 7px;
+    width: 250px;
+    cursor: pointer;
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+      color: #757575;
+      &:hover {
+        color: #c2c2c2;
+        transition: all 0.2s ease;
+      }
+    }
+    .username {
+      font-size: 14px;
+      color: #b3b3b3;
+    }
+  }
+  .follow-btn {
+    margin-left: 70px;
+    background-color: transparent;
+    color: var(--senary);
+    border: 2px solid var(--senary);
+    width: 190px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    &:hover {
+      transition: all 0.7s ease;
+      background-color: #6e64dc;
+      color: var(--septenary);
+    }
+  }
+}
+
+.profile-mid {
+  width: 748px ;
+  height: auto;
+  color: white;
+
+}
+
+.left-pro,
+.right-pro {
+  width: calc((100% - 748px) / 2);
+}
+
+.right-pro{
+  padding: 55px 20px 0 30px;
+}
+
+.recom {
+  color: var(--septenary);
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.profile{
+  width: 100%;
+  height: 250px;
+  background-color: var(--primary);
+  position: relative;
+  border: 1px solid var(--quinary);
+  .profilefordetail{
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .name{
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .addname{
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      color: #b3b3b3;
+    }
+  }
+  .bg-profile{
+    background-color: #ffffff;
+    width: 100%;
+    height: 138px;
+    background-image: url("https://images5.alphacoders.com/132/1327980.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .profile-pic{
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    width: 172px;
+    height: 172px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+  }
+  .rightright{
+    margin-right: 50px;
+    margin-top: 10px;
+    .follow-btn{
+      background-color:#b4b4b4;
+      color: var(--septenary);
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      border: none;
+      padding: 5px;
+      border-radius: 10px;
+      width: 130px;
+      font-weight: 600;
+    }
+  }
+}
+
